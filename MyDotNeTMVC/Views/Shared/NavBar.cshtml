@@ -1,0 +1,23 @@
+﻿
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto">@Html.ActionLink("Praveen Sankhla", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })<a><span>.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link scrollto active" })</li>
+                <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link scrollto" })</li>
+                <li>@Html.ActionLink("Services", "Services", "Home", new { area = "" }, new { @class = "nav-link scrollto" })</li>
+                <li>@Html.ActionLink("Portfolio", "Portfolio", "Home", new { area = "" }, new { @class = "nav-link scrollto" })</li>
+                <li>@Html.ActionLink("Team", "Team", "Home", new { area = "" }, new { @class = "nav-link scrollto" })</li>
+                <li>@Html.ActionLink("Blog", "Blog", "Home", new { area = "" }, new { @class = "nav-link scrollto" })</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link scrollto" })</li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <div>@Html.ActionLink("Get Started", "About", "Home", new { area = "" }, new { @class = "get-started-btn scrollto" })</div>
+    </div>
+</header>
